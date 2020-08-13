@@ -19,8 +19,7 @@ It should not be confused with negascout, an algorithm to compute the minimax or
 <p>The first function, <code>get_legal_moves()</code> takes no arguments and returns a <code>list</code> (the tests will fail for any other type of collection) of moves available to the active player in the current state. The "active" player is the agent with initiative to move (e.g., on an empty board player 1 is the active player, and initiative alternates after each move played). According to the game rules, each player can move to any open square for their first move, and then to any open square along a row, column, or diagonal from their current position. (Note that players cannot jump or pass through blocked squares.)</p>
 <h3 id="forecasting-moves">Forecasting Moves</h3>
 <p>The second function, <code>forecast_move()</code> takes a move (a pair of coordinates <code>(x, y)</code> of the desired endpoint of the player) and return a <strong>new</strong> game state object (you should not mutate game state objects). Treating the game state as immutable makes it trivial to roll out and unwind each branch of the game tree (children nodes will simply be garbage collected when the caller returns). (<em>Hint:</em> check out the <code>copy.deepcopy</code> module from the standard library to copy your board state.)</p>
-<p><em>Note: Don't be afraid to add additional functions to the class or module to help complete the two required tasks.</em></p>
-<p>If you get stuck, flip over to the solution to see one possible implementation.</p>
+
 </div>
 
 </div>
